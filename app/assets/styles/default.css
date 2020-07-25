@@ -1,7 +1,8 @@
 @import 'normalize.css';
-@import 'base/__root.css';
-@import 'base/__global.css';
-@import 'modules/__sec1.css';
-@import 'modules/__sec2.css';
-@import 'modules/__posts.css';
-@import 'modules/__contact.css'
+@import 'base/__root';
+@import 'base/__global';
+@import 'base/mixins';
+@import 'modules/__sec1';
+@import 'modules/__sec2';
+@import 'modules/__posts';
+@import 'modules/__contact'

@@ -217,15 +217,21 @@
 	left: -5px
 }
 
-
-
-@media screen and (max-width: 1200px){
-	.main-container{
-		width: 95%;
+@mixin atSmall {
+	#preview-shadow{
+		max-width: 280px;
+		height: 180px;
+		padding-left: 10px;
+		padding-top: 10px;
 	}
-}
 
-@media screen and (max-width: 800px){
+	#preview{
+		width: 280px;
+
+	}
+
+}
+@mixin atMedium {
 	.intro-wrapper{
 		grid-template-columns: 1fr;
 		grid-template-areas: 
@@ -240,18 +246,8 @@
 	}
 
 }
-
-@media screen and (max-width: 400px){
-	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-		padding-top: 10px;
+@mixin atLarge{
+	.main-container{
+		width: 95%;
 	}
-
-	#preview{
-		width: 280px;
-
-	}
-
 }
