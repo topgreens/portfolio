@@ -1,11 +1,13 @@
 //BLUEPRINT WITH CLASS SYNTAX
-class Person {
-    constructor(name, favoriteColor) {
-        this.name = name;
-        this.favoriteColor = favoriteColor;
+class Post {
+    constructor(author, title, postContent, date) {
+        this.author = author;
+        this.title = title;
+        this.postContent = postContent;
+        this.date = date;
     }
-    greet() {
-        console.log("Just Sayhi, I am " + this.name + " my favorite color is " + this.favouriteColor + ".");
+    recentPost() {
+        console.log("Just Sayhi, I am " + this.author + " ; " + this.title + ".");
 
     }
 }
@@ -19,4 +21,4 @@ class Person {
 //     }
 // }
 
-export default Person
+export default Post

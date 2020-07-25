@@ -1,4 +1,4 @@
-import '../scripts/modules/script.js'
+import '../styles/default.css'
 
 if (module.hot) {
     module.hot.accept()
