@@ -1,4 +1,9 @@
 import '../styles/default.css'
+import RevealOnScroll from './modules/RevealOnScroll'
+
+
+new RevealOnScroll(document.querySelectorAll(".about-wrapper"), 75)
+new RevealOnScroll(document.querySelectorAll(".post-wrapper"), 60)
 
 if (module.hot) {
     module.hot.accept()
