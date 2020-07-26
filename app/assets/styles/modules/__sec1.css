@@ -1,7 +1,7 @@
 .s1{
 	background-color: var(--mainColor);
 	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
+	
 }
 
 
@@ -16,6 +16,18 @@
 	text-align: center;
 	align-content: center;
 	min-height: 10em;
+
+	@mixin atMedium {
+     h1{
+		 font-size: small;
+	 }
+	  
+	}
+	 @mixin atSmall {
+       h1{
+		   font-size: x-small;
+	   }
+    }
 
 }
 
