@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
 		rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="/app/assets/styles/default.css">
+	<link rel="stylesheet" type="text/css" src="/assets/styles/default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 
@@ -29,7 +29,7 @@
 				<div class="nav-wrapper">
 
 					<!-- Link around dots-wrapper added -->
-					<a href="/app/index.html">
+					<a href="index.html">
 						<div class="dots-wrapper">
 							<div id="dot-1" class="browser-dot"></div>
 							<div id="dot-2" class="browser-dot"></div>
@@ -39,15 +39,18 @@
 
 
 					<ul id="navigation">
-						<li><a href="/app/index.html#">Home</a></li>
-						<li><a href="/app/index.html#about-me">About</a></li>
-						<li><a href="/app/index.html#posts">Posts</a></li>
-						<li><a href="/app/index.html#contact">Contact</a></li>
+						<li><a href="index.html#">Home</a></li>
+						<li><a href="index.html#about-me">About</a></li>
+						<li><a href="index.html#posts">Posts</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src="/app/assets/images/author.jpg">
+					<picture>
+						<source srcset="">
+						<img id="profile_pic" src="assets/images/author.jpg">
+					</picture>
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
@@ -96,8 +99,8 @@
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Fullstack developer with primary focus on Java, Big Data + Angular: <a target="_blank"
-							href="/app/assets/files/ALBERT.pdf">Download Resume</a></p>
+					<p>Fullstack developer with primary focus on Java, JavaScript, Big Data + Angular: <a
+							target="_blank" href="assets/files/ALBERT.pdf">Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
@@ -105,15 +108,15 @@
 							<li>Nodejs</li>
 							<li>JavaScript</li>
 							<li>Angular</li>
-							<li>HDFS</li>
+							<li>HTML/CSS</li>
 						</ul>
 
 						<ul>
 							<li>SpringBoot, API</li>
-							<li>Cloudera apache hadoop</li>
+							<li>Spark, HBASE</li>
 							<li>AWS (RDS/S3)</li>
 							<li>Webpack - GIT</li>
-							<li>HTML/CSS</li>
+							<li>HDFS</li>
 						</ul>
 
 					</div>
@@ -122,7 +125,7 @@
 
 
 				<div class="social-links">
-					<img id="social_img" src="/app/assets/images/follow-1.jpg">
+					<img id="social_img" src="assets/images/follow-1.jpg">
 					<h3>Find me on Twitter & LinkedIn</h3>
 
 					<a target="_blank" href="https://www.linkedin.com/in/albert-irobun-310963181/">LinkedIn: @Albert</a>
@@ -143,38 +146,38 @@
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="/app/assets/images/array.jpg">
+						<img class="thumbnail" src="assets/images/array.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Exploring JavaScript array method</h6>
 							<p class="post-intro">Javascript most poplular array methods: eg ForEach, Map, Filter,
 								Reduce. You're about to explore the syntax, function signature
 								tips and tricks. </p>
-							<a href="/app/assets/views/array.html">Read More</a>
+							<a href="assets/views/array.html">Read More</a>
 						</div>
 					</div>
 				</div>
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="/app/assets/images/callum-shaw.jpg">
+						<img class="thumbnail" src="assets/images/callum-shaw.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Java</h6>
 							<p class="post-intro">In this tutorial basically, we provide the depth concept of Java
 								programs that helps a beginner to write java program
 								easily and create a java project of his own.</p>
-							<a href="/app/assets/views/post.html">Read More</a>
+							<a href="assets/views/post.html">Read More</a>
 						</div>
 					</div>
 				</div>
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="/app/assets/images/testimg-cover.jpg">
+						<img class="thumbnail" src="assets/images/testimg-cover.jpg">
 						<div class="post-preview">
 							<h6 class="post-title">Big Data Applications using Hadoop</h6>
 							<p class="post-intro">Hadoop is an ecosystem of open source components that fundamentally
 								changes the way enterprises store, process, and analyze data.</p>
-							<a href="/app/assets/views/post.html">Read More</a>
+							<a href="assets/views/post.html">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -208,7 +211,14 @@
 		</div>
 	</section>
 
-	<script type="text/javascript" src="/app/assets/scripts/script.js"></script>
+	<footer class="site-footer">
+		<div class="wrapper">
+			<p><span class="site-footer__text">Copyright &copy; 2020 Topgreen Portfolio. All rights reserved.</span>
+				<a href="index.html#contact" class="btn btn--orange open-modal">Get in Touch</a></p>
+		</div>
+	</footer>
+	<script src="bundled.js"></script>
+	<script src="/assets/scripts/modules/script.js"></script>
 </body>
 
 </html>

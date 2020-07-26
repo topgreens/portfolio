@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/app/assets/styles/default.css">
+    <link rel="stylesheet" type="text/css" src="../assets/styles/default.css">
 
 
     <style type="text/css">
@@ -39,10 +39,10 @@
         </a>
 
         <ul id="navigation">
-            <li><a href="/app/index.html#">Home</a></li>
-            <li><a href="/app/index.html#about-me">About</a></li>
-            <li><a href="/app/index.html#posts">Posts</a></li>
-            <li><a href="/app/index.html#contact">Contact</a></li>
+            <li><a href="/index.html#">Home</a></li>
+            <li><a href="/index.html#about-me">About</a></li>
+            <li><a href="/index.html#posts">Posts</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
 
         </ul>
     </div>
@@ -56,7 +56,7 @@
 
         <h3>Array ForEach</h3><br>
 
-        <h4>What is Array ForEach</h4>
+        <h4><u>What is Array ForEach</u></h4>
         <p>
             Array Foreach is a method that exits on the array.prototype that was introduced in ECMAScript 5(ES5)
             and is supported an all modern browsers.
@@ -71,16 +71,60 @@
             <code>array.forEach((value, index, array) => {...}, thisArg);</code>
         </p>
         <p>ForEach is considered a "modern for..in loop" replacement, despite its behaviour and having less flexibilty.
+            ForEach doesn't allow us to break the loop or even loop backwards, which may be a common scenario you'll run
+            into - so it's certainly not a flat-out repalcement.
+            However, it's a party standard approach nowadays.
         </p>
-    </div>
+        <details>
+            <summary><u> Array ForEach syntax deconstructed:</u></summary>
+            <li>ForEach's first argument is a callback function that exposes the paramters:</li>
+            <p>-value (the current element)</p>
+            <p>-index (the element's index -fairly commonly used)</p>
+            <p>-array(the array we are looping - rarely used)</p>
+            <p>– Inside the body of the function we would access value and do something with us, sum values,
+                inject template into the DOM, anything you like
+                • Every’s second argument thisArg allows the this context’ to be changed</p>
+            <p>In its simplest form, here is how ForEach behaves:</p>
+            <code>
+                    1 ['a', 'b', 'c', 'd'].forEach(function(item, index) {
+                    2 console.log(item, index)¡
+                    3 })¡
 
+                </code>
+            <p>We would then see something like this being printed out in the console (note the index number too):</p>
+            <code>
+                    1- a 0
+                    2- b 1
+                    3- c 2
+                    4- d 3
+
+             </code>
+            <p>Accessing each array element, and its index, couldn’t be easier!
+                Once your array has been ‘looped’, ForEach will exit and your JavaScript program will continue.</p>
+        </details>
+
+        <h4><u>Using Array ForEach</u></h4>
+        <p>Here’s our data structure that we’ll be using Array ForEach with (we’ll be using this same array throughout
+            this
+            series):</p>
+        <figure>
+            <img src="../images/imgs-1.png" alt="array-foreach">
+        </figure>
+        <p>Let’s move to a more realistic scenario − we want to display the details of each array object to the user,
+            the id, name
+            and price!</p>
+        <p>We can construct a new <li> template for each array element, and inject it into the DOM</p>
+        <figure>
+            <img src="../images/imgs-2.png" alt="array-foreach">
+        </figure>
+    </div>
+    <br>
     <footer class="site-footer">
         <div class="wrapper">
             <p><span class="site-footer__text">Copyright &copy; 2020 Topgreen Portfolio. All rights reserved.</span>
-                <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+                <a href="index.html#contact" class="btn btn--orange open-modal">Get in Touch</a></p>
         </div>
     </footer>
-
 </body>
 
 </html>
