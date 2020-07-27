@@ -7,8 +7,8 @@
 
   &--pull-right {
     @mixin atMedium {
-      float: left;
-      margin-left: 50px;
+      float: right;
+      margin-right: 50px;
     }
   }
 
@@ -36,7 +36,7 @@
   }
 
   a {
-    color: #FFF;
+    color: #5b2323;
     font-weight: 300;
     text-decoration: none;
     display: block;

@@ -1,9 +1,13 @@
 import '../styles/default.css'
+import 'lazysizes'
+import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 
 
+new MobileMenu()
 new RevealOnScroll(document.querySelectorAll(".about-wrapper"), 75)
 new RevealOnScroll(document.querySelectorAll(".post-wrapper"), 60)
+new RevealOnScroll(document.querySelectorAll(".contact-me"), 60)
 let modal
 
 document.querySelectorAll(".open-modal").forEach(el => {

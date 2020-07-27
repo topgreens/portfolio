@@ -17,39 +17,28 @@
 </head>
 
 <body>
-	<!-- <header class="site-header">
-		<div class="wrapper">
-			<div class="site-header__menu-content">
-				<div class="site-header__btn-container">
-					<a href="" class="btn">Get in Touch</a>
-				</div>
-				<nav class="primary-nav primary-nav--pull-right">
-					<ul>
-						<li><a href="index.html#" id="our-beginning-link">Home</a></li>
-						<li><a href="index.html#about-me" id="features-link">About</a></li>
-						<li><a href="#" id="blog">Blog</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header> -->
 	<section class="s1">
 		<div class="main-container">
-			<div class="greeting-wrapper">
-				<div class="site-header__menu-content">
-					<div class="site-header__btn-container">
-						<a href="" class="btn">Get in Touch</a>
+			<div class="site-header">
+				<div class="wrapper">
+					<div class="site-header__menu-icon">
+						<div class="site-header__menu-icon__middle"></div>
 					</div>
-					<nav class="primary-nav primary-nav--pull-right">
-						<ul>
-							<li><a href="index.html#" id="our-beginning-link">Home</a></li>
-							<li><a href="index.html#about-me" id="features-link">About</a></li>
-							<li><a href="#" id="blog">Blog</a></li>
-						</ul>
-					</nav>
+					<div class="site-header__menu-content">
+						<div class="site-header__btn-container">
+							<a href="#" class="btn open-modal">Get in Touch</a>
+						</div>
+						<nav class="primary-nav primary-nav--pull-right">
+							<ul>
+								<li><a href="index.html#" id="our-beginning-link">Home</a></li>
+								<li><a href="index.html#about-me" id="features-link">About</a></li>
+								<li><a href="#" id="blog">Blog</a></li>
+								<li><a href="index.html#contact" id="features-link">Contact Me</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
-
 
 			<div class="intro-wrapper">
 				<div class="nav-wrapper">
@@ -74,8 +63,7 @@
 
 				<div class="left-column">
 					<picture>
-						<source srcset="">
-						<img id="profile_pic" src="assets/images/author.jpg">
+						<img id="profile_pic" class="lazyload" data-srcset="assets/images/author.jpg">
 					</picture>
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
@@ -96,7 +84,7 @@
 							<div id="corner-tl" class="corner"></div>
 							<div id="corner-tr" class="corner"></div>
 							<h3>What I Do</h3>
-							<p>I'm Junior developer, I enjoy coding and learning new technology.</p>
+							<p>I'm Junior developer, I enjoy writing codes and learning new technology.</p>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -151,7 +139,9 @@
 
 
 				<div class="social-links">
-					<img id="social_img" src="assets/images/follow-1.jpg">
+					<picture>
+						<img id="social_img" class="lazyload" srcset="assets/images/follow-1.jpg">
+					</picture>
 					<h3>Find me on Twitter & LinkedIn</h3>
 
 					<a target="_blank" href="https://www.linkedin.com/in/albert-irobun-310963181/">LinkedIn: @Albert</a>
@@ -172,7 +162,9 @@
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="assets/images/array.jpg">
+						<picture>
+							<img id="thumbnail" class="lazyload" data-srcset="assets/images/array.jpg">
+						</picture>
 						<div class="post-preview">
 							<h6 class="post-title">Exploring JavaScript array method</h6>
 							<p class="post-intro">Javascript most poplular array methods: eg ForEach, Map, Filter,
@@ -185,7 +177,9 @@
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="assets/images/callum-shaw.jpg">
+						<picture>
+							<img id="thumbnail" class="layload" data-srcset="assets/images/speeches-cover.jpg">
+						</picture>
 						<div class="post-preview">
 							<h6 class="post-title">Java</h6>
 							<p class="post-intro">In this tutorial basically, we provide the depth concept of Java
@@ -198,7 +192,9 @@
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="assets/images/testimg-cover.jpg">
+						<picture>
+							<img id="thumbnail" class="lazyload" data-srcset="assets/images/testimg-cover.jpg">
+						</picture>
 						<div class="post-preview">
 							<h6 class="post-title">Big Data Applications using Hadoop</h6>
 							<p class="post-intro">Hadoop is an ecosystem of open source components that fundamentally
@@ -217,7 +213,7 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" class="contact-me">
 				<a name="contact"></a>
 
 				<label>Name</label>
