@@ -6,10 +6,9 @@ import StickyHeader from './modules/StickyHeader'
 
 
 
-
-
 let stickyHeader = new StickyHeader()
 new MobileMenu()
+new RevealOnScroll(document.querySelectorAll(".intro-wrapper"), 50)
 new RevealOnScroll(document.querySelectorAll("#about-wrapper"), 75)
 new RevealOnScroll(document.querySelectorAll("#post-wrapper"), 60)
 new RevealOnScroll(document.querySelectorAll("#contact-form"), 60)
