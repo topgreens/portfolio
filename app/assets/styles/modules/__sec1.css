@@ -6,8 +6,35 @@
 
 
 .main-container{
-	width: 1200px;
+	
 	margin: 0 auto;
+	
+	@mixin atMedium {
+		width: 800px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column';
+	
+	&--right-column{
+		justify-content: center;
+	}
+
+}
+@mixin atSmall{	
+	 width: 530px;	
+	 grid-template-columns: 1fr;
+	 grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column';
+	
+	&--right-column{
+		justify-content: center;
+	}
+}
+
 }
 
 .intro-wrapper{
@@ -22,6 +49,10 @@
 	grid-template-areas: 
 		'nav-wrapper nav-wrapper'
 		'left-column right-column';
+
+	@mixin atSmall{	
+    display: block;	
+}	
 }
 
 
@@ -221,6 +252,21 @@
 
 @mixin atLarge{
 	.main-container{
-		width: 95%;
+		width: 83%;
 	}
+	.intro-wrapper{
+	background-color: var(--secondaryColor);
+	border:1px solid var(--borderColor);
+	border-radius:5px 5px 0 0;
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+		'nav-wrapper nav-wrapper'
+		'left-column right-column';
+
+		
+  }
 }

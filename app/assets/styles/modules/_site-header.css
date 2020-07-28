@@ -4,13 +4,24 @@
   padding: 3px 0;
   z-index: 2;
   transition: background-color .3s ease-out;
+  font-family: 'Roboto Mono', monospace;
 
   &--is-expanded {
     background-color: rgba($mainBlue, .55);
   }
-  
+  @mixin atSmall {
+    position: fixed;
+    width: 100%;
+    background-color: rgba($mainBlue, .3);
+
+    &--dark {
+      background-color: rgba(23, 51, 72, .85);
+    }
+  }
+
   @mixin atMedium {
     position: fixed;
+    width: 83%;
     background-color: rgba($mainBlue, .3);
 
     &--dark {
@@ -110,4 +121,5 @@
       transform: scale(1);
     }
   }
+  
 }

@@ -10,6 +10,15 @@
 	padding-bottom: 50px;
 	padding-top: 50px;
 	gap:100px;
+
+	@mixin atSmall{	
+	padding: 2px;
+
+	h4{
+		text-align: center;
+	}
+
+  }
 }
 
 

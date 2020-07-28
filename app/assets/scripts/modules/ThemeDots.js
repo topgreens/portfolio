@@ -22,19 +22,19 @@ for (var i = 0; themeDots.length > i; i++) {
 function setTheme(mode) {
 	console.log('theme changed')
 	if (mode == 'light') {
-		document.getElementById('light-mode')
+		document.getElementById('light-mode').src = './default.css'
 	}
 
 	if (mode == 'blue') {
-		document.getElementById('blue-mode')
+		document.getElementById('blue-mode').src = '../modules/blue.css'
 	}
 
 	if (mode == 'green') {
-		document.getElementById('green-mode')
+		document.getElementById('green-mode').src = '../modules/green.css'
 	}
 
 	if (mode == 'purple') {
-		document.getElementById('purple-mode')
+		document.getElementById('purple-mode').src = './modules/purple.css'
 	}
 
 	localStorage.setItem('theme', mode)
