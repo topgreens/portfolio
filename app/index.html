@@ -19,7 +19,7 @@
 <body>
 	<section class="s1">
 		<div class="main-container">
-			<div class="site-header">
+			<header class="site-header">
 				<div class="wrapper">
 					<div class="site-header__menu-icon">
 						<div class="site-header__menu-icon__middle"></div>
@@ -30,15 +30,15 @@
 						</div>
 						<nav class="primary-nav primary-nav--pull-right">
 							<ul>
-								<li><a href="index.html#" id="our-beginning-link">Home</a></li>
-								<li><a href="index.html#about-me" id="features-link">About</a></li>
-								<li><a href="#" id="blog">Blog</a></li>
-								<li><a href="index.html#contact" id="features-link">Contact Me</a></li>
+								<li><a href="#our-home" id="our-home-link">Home</a></li>
+								<li><a href="#about-me" id="about-link">About</a></li>
+								<li><a href="#posts" id="posts-link">Posts</a></li>
+								<li><a href="#contact" id="contact-link">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-			</div>
+			</header>
 
 			<div class="intro-wrapper">
 				<div class="nav-wrapper">
@@ -89,7 +89,7 @@
 	<section class="s2">
 		<div class="main-container">
 			<a name="about-me"></a>
-			<div class="about-wrapper">
+			<div id="about-wrapper" class="page-section" data-matching-link="#about-link">
 				<div class="about-me">
 					<h4>More about me</h4>
 
@@ -150,7 +150,7 @@
 		<div class="main-container">
 			<h3 style="text-align: center;">Some of my past projects</h3>
 
-			<div class="post-wrapper">
+			<div id="post-wrapper" class="page-section" data-matching-link="#posts-link">
 
 				<div>
 					<div class="post">
@@ -205,7 +205,7 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form" class="contact-me">
+			<form id="contact-form" class="page-section" data-matching-link="#contact-link">
 				<a name="contact"></a>
 
 				<label>Name</label>
@@ -232,7 +232,7 @@
 		</div>
 	</footer>
 	<script src="bundled.js"></script>
-	<!-- <script src="/assets/scripts/modules/script.js"></script> -->
+	<script src="/assets/scripts/modules/ThemeDots.js"></script>
 </body>
 
 </html>

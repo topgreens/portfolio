@@ -2,12 +2,17 @@ import '../styles/default.css'
 import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
+import StickyHeader from './modules/StickyHeader'
 
 
+
+
+
+let stickyHeader = new StickyHeader()
 new MobileMenu()
-new RevealOnScroll(document.querySelectorAll(".about-wrapper"), 75)
-new RevealOnScroll(document.querySelectorAll(".post-wrapper"), 60)
-new RevealOnScroll(document.querySelectorAll(".contact-me"), 60)
+new RevealOnScroll(document.querySelectorAll("#about-wrapper"), 75)
+new RevealOnScroll(document.querySelectorAll("#post-wrapper"), 60)
+new RevealOnScroll(document.querySelectorAll("#contact-form"), 60)
 let modal
 
 document.querySelectorAll(".open-modal").forEach(el => {

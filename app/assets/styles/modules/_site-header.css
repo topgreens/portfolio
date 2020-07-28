@@ -1,5 +1,7 @@
 .site-header {
-  padding: 10px 0;
+  width: 95%;
+  position: relative;
+  padding: 3px 0;
   z-index: 2;
   transition: background-color .3s ease-out;
 
@@ -8,7 +10,7 @@
   }
   
   @mixin atMedium {
-    position: relative;
+    position: fixed;
     background-color: rgba($mainBlue, .3);
 
     &--dark {
@@ -28,6 +30,7 @@
     z-index: 10;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -89,8 +92,9 @@
     transition: all .3s ease-out;
     position: relative;
     z-index: -10;
-  
     text-align: center;
+
+  
 
     @mixin atMedium {
       opacity: 1;

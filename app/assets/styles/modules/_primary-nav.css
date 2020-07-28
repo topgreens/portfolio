@@ -8,14 +8,14 @@
   &--pull-right {
     @mixin atMedium {
       float: right;
-      margin-right: 50px;
     }
   }
-
-  ul {
+  
+ul {
     margin: 0;
     padding: 0;
-  }
+}
+
 
   li {
     list-style: none;
@@ -36,7 +36,7 @@
   }
 
   a {
-    color: #5b2323;
+    color: $mainOrange;
     font-weight: 300;
     text-decoration: none;
     display: block;
@@ -50,7 +50,7 @@
       background-color: transparent;
 
       &.is-current-link {
-        color: #fabb69;
+        color: $mainGreen;
       }
     }
   }
