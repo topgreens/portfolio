@@ -11,19 +11,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" src="../styles/default.css">
-
-
-	<style type="text/css">
-		.img-container {
-			max-width: 600px;
-		}
-
-		img {
-			width: 100%
-		}
-	</style>
-
+	<link rel="stylesheet" type="text/css" src="./assets/styles/default.css">
 </head>
 
 <body>
@@ -47,80 +35,100 @@
 		</ul>
 	</div>
 
-	<div class="main-container">
-		<br>
+	<div id="main-container">
 
-		<div class="img-container">
-			<img src="../images/tools-used-in-bigdata-analytics.png">
+		<div id="img-banner">
+			<picture>
+				<img class="lazyload" data-srcset="/assets/images/tools-used-in-bigdata-analytics.png">
+			</picture>
 		</div>
 
-		<h3>About Big Data Applications using Hadoop</h3>
+		<article>
+			<h4 class="headings">About Big Data Applications using Hadoop</h4>
 
-		<p>Hadoop is an ecosystem of open source components that fundamentally changes the way enterprises store,
-			process, and
-			analyze data.
-			<br>
-			<br>
-			Unlike traditional systems, Hadoop enables multiple types of analytic workloads to run on the same data, at
-			the same
-			<br>
-			<br>
-			time, at massive scale on industry-standard hardware. CDH, Cloudera's open source
-			<br>
-			<br>
-			platform, is the most popular distribution of Hadoop and related projects in the world (with support
-			available via a
+			<p class="posts">Hadoop is an ecosystem of open source components that fundamentally changes the way
+				enterprises
+				store, process, and analyze data. Unlike traditional systems, Hadoop enables multiple types of analytic
+				workloads
+				to run on the same data, at the same time, at massive scale on industry-standard hardware. CDH,
+				Cloudera's open
+				source platform, is the most popular distribution of Hadoop and related projects in the world (with
+				support
+				available via a Cloudera Enterprise subscription).</p>
+		</article>
+		<h4 class="headings">Technologies:</h5>
+			<ul class="tools">
+				<li>- Java - MapReduce</li>
+				<li>- HBASE</li>
+				<li>- Kafka</li>
+				<li>- Sqoop</li>
+				<li>- Spark</li>
+				<li>- HDFS</li>
+				<li>- API</li>
+				<li>- Flume</li>
+			</ul>
 
-			<br>
-			<br>
-			Cloudera Enterprise subscription).</p>
+			<article>
+				<h4 class="headings">Cloudera Admin Dashboard</h5>
+					<div class="img">
+						<picture>
+							<img class="lazyload" data-srcset="/assets/images/post-1.jpeg">
+						</picture>
+					</div>
+					<p></p>
+			</article>
 
-		<h5>Technologies:</h5>
-		<ul>
-			<li>- Java - MapReduce</li>
-			<li>- HBASE</li>
-			<li>- Kafka</li>
-			<li>- Sqoop</li>
-			<li>- Spark</li>
-			<li>- HDFS</li>
-			<li>- API</li>
-			<li>- Flume</li>
-		</ul>
+			<article>
+				<h4 class="headings">Descriptive Analytics</h5>
+					<div class="img">
+						<picture>
+							<img class="lazyload" data-srcset="/assets/images/Types-of-bigdata-analytics.png">
+						</picture>
+					</div>
+					<p></p>
+			</article>
 
+			<article>
+				<h4 class="headings">Predictive Analytics</h5>
+					<div class="img">
+						<picture>
+							<img class="lazyload"
+								data-srcset="/assets/images/Types-of-bigdata-analytics-predictive-analytics.png">
+						</picture>
+					</div>
+					<p></p>
+			</article>
 
-		<h5>Cloudera Admin Dashboard</h5>
-		<div class="img-container">
-			<img src="../images/post-1.jpeg">
-		</div>
+			<article>
+				<h4 class="headings">Prescriptive analytics</h5>
+					<div class="img">
+						<picture>
+							<img class="lazyload"
+								data-srcset="/assets/images/Types-of-bigdata-analytics-prescriptive-analytics.png">
+						</picture>
+					</div>
+					<p></p>
+			</article>
 
-		<h6>Descriptive Analytics</h5>
-			<div class="img-container">
-				<img src="../images/Types-of-bigdata-analytics.png">
-			</div>
-
-			<h5>Predictive Analytics</h5>
-			<div class="img-container">
-				<img src="../images/Types-of-bigdata-analytics-predictive-analytics.png">
-			</div>
-
-			<h5>Prescriptive analytics</h5>
-			<div class="img-container">
-				<img src="../images/Types-of-bigdata-analytics-prescriptive-analytics.png">
-			</div>
-
-			<h5>Diagnostics analytics</h5>
-			<div class="img-container">
-				<img src="../images/Types-of-bigdata-analytics-diagnostics-analytics.png">
-			</div>
-
+			<article>
+				<h4 class="headings">Diagnostics analytics</h5>
+					<div class="img">
+						<picture>
+							<img class="lazyload"
+								data-srcset="/assets/images/Types-of-bigdata-analytics-diagnostics-analytics.png">
+						</picture>
+					</div>
+					<p></p>
+			</article>
 	</div>
 	<br>
 	<footer class="site-footer">
 		<div class="wrapper">
 			<p><span class="site-footer__text">Copyright &copy; 2020 Topgreen Portfolio. All rights reserved.</span>
-				<a href="index.html#contact" class="btn btn--orange open-modal">Get in Touch</a></p>
+				<a href="" class="btn btn--orange open-modal">Get in Touch</a></p>
 		</div>
 	</footer>
+	<script src="/bundled.js"></script>
 </body>
 
 </html>

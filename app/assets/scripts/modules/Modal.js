@@ -41,8 +41,8 @@ class Modal {
 
 			<div class="social-icons">
 				<a href="#" class="social-icons__icon"><img src="assets/images/icon/facebook.svg" alt="Facebook"></a>
-                <a href="#" class="social-icons__icon"><img src="assets/images/icon/twitter.svg" alt="Twitter"></a>
-                <a href="#" class="social-icons__icon"><img src="assets/images/icon/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://twitter.com/topgreens2" class="social-icons__icon"><img src="assets/images/icon/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/albert-irobun-310963181/" class="social-icons__icon"><img src="assets/images/icon/linkedin.svg" alt="LinkedIn"></a>
 				<a href="#" class="social-icons__icon"><img src="assets/images/icon/instagram.svg" alt="Instagram"></a>
 			</div>
 		</div>
