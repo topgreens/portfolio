@@ -11,7 +11,6 @@ new MobileMenu()
 
 
 new RevealOnScroll(document.querySelectorAll("#post-wrapper"), 75)
-new RevealOnScroll(document.querySelectorAll("#contact-form"), 60)
 let modal
 
 document.querySelectorAll(".open-modal").forEach(el => {

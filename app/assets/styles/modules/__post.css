@@ -29,5 +29,5 @@
     padding: 50px;
 }
 .tools, li{
-    color: dimgray;
+    color: var(--secondaryText);
 }

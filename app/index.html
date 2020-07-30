@@ -159,7 +159,7 @@
 							<p class="post-intro">Javascript most poplular array methods: eg ForEach, Map, Filter,
 								Reduce. You're about to explore the syntax, function signature
 								tips and tricks. </p>
-							<a href="assets/views/__post1.html">Read More</a>
+							<a href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -174,7 +174,7 @@
 							<p class="post-intro">In this tutorial basically, we provide the depth concept of Java
 								programs that helps a beginner to write java program
 								easily and create a java project of his own.</p>
-							<a href="assets/views/__post2.html">Read More</a>
+							<a href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -188,7 +188,7 @@
 							<h6 class="post-title">Big Data Applications using Hadoop</h6>
 							<p class="post-intro">Hadoop is an ecosystem of open source components that fundamentally
 								changes the way enterprises store, process, and analyze data.</p>
-							<a href="assets/views/__post.html">Read More</a>
+							<a href="#">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -202,20 +202,28 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form" class="page-section" data-matching-link="#contact-link">
+			<form name="sentMessage" id="contact-form" class="page-section" data-matching-link="#contact-link">
 				<a name="contact"></a>
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" name="name" required="required"
+					data-validation-required-message="Please enter your name.">
+				<p class="help-block text-danger"></p>
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="subject" required="required"
+					data-validation-required-message="Please enter your email address.">
+				<p class="help-block text-danger"></p>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="email" name="email" required="required"
+					data-validation-required-message="Please enter your email address.">
+				<p class="help-block text-danger"></p>
 
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
+				<textarea class="input-field" name="message" required="required"
+					data-validation-required-message="Please enter your message."></textarea>
+				<p class="help-block text-danger"></p>
 
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
